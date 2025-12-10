@@ -1,18 +1,6 @@
 @import "tailwindcss";
 
 
-/* Tema claro */
-.light {
-  background-color: #f9f9f9;
-  color: #222;
-}
-
-/* Tema oscuro */
-.dark {
-  background-color: #121212;
-  color: #f1f1f1;
-}
-
 body {
   background-color: #f9f9f9;
   color: #222;
