@@ -1,16 +1,88 @@
-# React + Vite
+PROYECTO FINAL FULLSTACK BIOS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App Web FullStack con un DashBoard con sistema de autenticación, gestión de item o artículos mediante CRUD completo, registro y login de usuario.
 
-Currently, two official plugins are available:
+Para 🚀 (desplegar) el proyecto se utilizo:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vercel para el frontend y Render para el backend
 
-## React Compiler
+Herramientas y dependencias necesarias 📋:
+ 
+Backend:
+Node.js con Express
+MongoDB con Mongoose
+JWT para autenticación
+bcryptjs para encriptación de contraseñas
+cors para manejo y control de origen
+dotenv para manejo de variables
+nodemon para reiniciar automáticamente el servidor después de hacer cambios
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend:
+React+Vite
+react router DOM para navegación
+Axios para peticiones HTTP y conexión con la API
+Tailwind CSS
 
-## Expanding the ESLint configuration
+Para la instalación se uso el comando npm install en la terminal 🔧:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+back:
+
+Node.js, MongoDB, jwt, bcryptjs, cors, dotenv (npm install express mongoose bcryptjs jsonwebtoken dotenv cors)
+nodemon (npm install -D nodemon)
+
+Y para el front:
+
+React+Vite (npm create vite@latest my-react-app)
+react router, axios, tailwind css (npm install react-router-dom axios tailwindcss @tailwindcss/vite)
+
+Instalación en tu terminal ⚙️:
+
+1. Clona el repositorio
+    git clone https://github.com/this-repository
+    cd this-repository
+2. Instala las dependencias y configura el backend
+   npm install 
+   Crear archivo .env
+   
+   PORT=5000
+   MONGODB_URI=mongodb+srv://usuario:password@cluster.mongodb.net/
+   JWT Configuration
+   JWT_SECRET=cambiar_por_clave_secreta_segura
+3. Configura el front 
+   npm install
+4. Inicia MongoDB
+   Si lo utilizas de forma local
+   mongod
+   Y si es en la nube
+   mongodb+srv://<usuario>:<contraseña>@cluster0.mongodb.net/<base_de_datos>
+
+Ejecución 🔩:
+   Abre dos terminales diferentes una para front y otra para back
+   back:
+   cd server
+   npm run dev
+   Servidor en el puerto http://localhost:5000
+   front:
+   cd client
+   npm run dev
+   Cliente en el puerto http://localhost:5173
+
+Variables de entorno 🛠️:
+
+Variables utilizadas en el backend:
+
+PORT: Puerto del servidor
+MONGODB_URI: Conexión a MongoDB
+JWT_SECRET: Clave secreta para tokens JWT
+FRONTEND_URL: URL del front
+
+Y para el frontend:
+ 
+VITE_API_URL: Para conectarse a la API 
+
+
+Autoría ✒️:
+Jose Diaz - Proyecto Final BIOS
+
+Licencia 📄:
+Proyecto meramente con fines académicos.
